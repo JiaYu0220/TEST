@@ -89,22 +89,21 @@ $(function () {
 	scrollDo();
 	handleHeaderLight();
 
-	$('.reback').on('click', function() {
-		$('html,body').animate({
-			scrollTop: 0
-		}, 500);
-	});
+	// $('.reback').on('click', function() {
+	// 	$('html,body').animate({
+	// 		scrollTop: 0
+	// 	}, 500);
+	// });
 	
-	$('.contact-us-button-social .main').on('click', function() {
-		console.log('contact');
-		$('.contact-us-button-social').toggleClass('active');
-	});
+	// $('.contact-us-button-social .main').on('click', function() {
+	// 	$('.contact-us-button-social').toggleClass('active');
+	// });
 
-	$.ajaxSetup({
-		headers: {
-			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-		}
-	});
+	// $.ajaxSetup({
+	// 	headers: {
+	// 		'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+	// 	}
+	// });
 });
 
 $(window).on('scroll', function () {
