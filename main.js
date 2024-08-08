@@ -19,13 +19,30 @@ function handleHeaderLight() {
 	let themeColor = '#ad0000';
 	if (scrollTop > 0) {
 		header.classList.add('light');
-		themeColor = '#6495ed';
+		themeColor = '#ffffff';
 	} else {
 		header.classList.remove('light');
 	}
 	metaThemeColor.setAttribute('content', themeColor);
 	body.style.backgroundColor = themeColor;
 }
+
+// const header = document.querySelector("header");
+// const body = document.querySelector("body");
+// const metaThemeColor = document.querySelector("meta[name='theme-color']");
+
+// function handleHeaderLight() {
+// 	const scrollTop = window.scrollY;
+// 	let themeColor = '#ad0000';
+// 	if (scrollTop > 0) {
+// 		header.classList.add('light');
+// 		themeColor = '#ffffff';
+// 	} else {
+// 		header.classList.remove('light');
+// 	}
+// 	metaThemeColor.setAttribute('content', themeColor);
+// 	body.style.backgroundColor = themeColor;
+// }
 
 // function handleHeaderLight() {
 // 	const scrollTop = window.scrollY;
