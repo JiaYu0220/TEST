@@ -42,7 +42,7 @@ function handleHeaderLight() {
 		header.classList.remove('light');
 	}
 	metaThemeColor.setAttribute('content', themeColor);
-	body.style.backgroundColor = themeColor;
+	// body.style.backgroundColor = themeColor;
 }
 
 $(function () {
