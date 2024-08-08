@@ -68,22 +68,7 @@ import $ from 'jquery';
 //     }
 // }
 
-const header = document.querySelector("header");
-const body = document.querySelector("body");
-const metaThemeColor = document.querySelector("meta[name='theme-color']");
 
-function handleHeaderLight() {
-	const scrollTop = window.scrollY;
-	let themeColor = '#ad0000';
-	if (scrollTop > 0) {
-		header.classList.add('light');
-		themeColor = '#ffffff';
-	} else {
-		header.classList.remove('light');
-	}
-	metaThemeColor.setAttribute('content', themeColor);
-	body.style.backgroundColor = themeColor;
-}
 
 $(function () {
 	// scrollDo();
@@ -110,6 +95,23 @@ $(window).on('scroll', function () {
     // scrollDo();
 	handleHeaderLight();
 });
+
+const header = document.querySelector("header");
+const body = document.querySelector("body");
+const metaThemeColor = document.querySelector("meta[name='theme-color']");
+
+function handleHeaderLight() {
+	const scrollTop = window.scrollY;
+	let themeColor = '#ad0000';
+	if (scrollTop > 0) {
+		header.classList.add('light');
+		themeColor = '#ffffff';
+	} else {
+		header.classList.remove('light');
+	}
+	metaThemeColor.setAttribute('content', themeColor);
+	body.style.backgroundColor = themeColor;
+}
 
 // 驗證
 // const constraints = {
