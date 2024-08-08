@@ -1,3 +1,5 @@
+import './assets/scss/all.scss';
+
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 const body = document.querySelector("body");
