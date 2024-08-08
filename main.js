@@ -112,93 +112,93 @@ $(window).on('scroll', function () {
 });
 
 // 驗證
-const constraints = {
-	name: {
-		presence: {
-			message: "請輸入姓名"
-		},
-	},
-	gender: {
-		presence: {
-			message: "請選擇稱謂"
-		},
-	},
-	store: {
-		presence: {
-			message: "請輸入公司／商店名稱"
-		},
-	},
-	phone: {
-		presence: {
-			message: "請輸入聯絡電話"
-		},
-		format: {
-			pattern: /^(0)[0-9]{9}$/,
-            message: "請輸入正確的電話號碼"
-		}
-	},
-	time: {
-		presence: {
-			message: "請輸入方便聯絡的時間"
-		},
-	},
-	email: {
-		presence: {
-			message: "請輸入聯絡信箱"
-		},
-		email: {
-			message: "請輸入正確的信箱格式"
-		}
-	},
-	line: {
-		presence: {
-			message: "請輸入 LINE ID"
-		},
-	},
-}
-const consultForm = document.querySelector('#consult-form');
-const consultInputs = consultForm.querySelectorAll('input');
-const consultData = {};
-consultInputs.forEach((input) => {
-	input.addEventListener('input', () =>  validateInput(input))
-})
+// const constraints = {
+// 	name: {
+// 		presence: {
+// 			message: "請輸入姓名"
+// 		},
+// 	},
+// 	gender: {
+// 		presence: {
+// 			message: "請選擇稱謂"
+// 		},
+// 	},
+// 	store: {
+// 		presence: {
+// 			message: "請輸入公司／商店名稱"
+// 		},
+// 	},
+// 	phone: {
+// 		presence: {
+// 			message: "請輸入聯絡電話"
+// 		},
+// 		format: {
+// 			pattern: /^(0)[0-9]{9}$/,
+//             message: "請輸入正確的電話號碼"
+// 		}
+// 	},
+// 	time: {
+// 		presence: {
+// 			message: "請輸入方便聯絡的時間"
+// 		},
+// 	},
+// 	email: {
+// 		presence: {
+// 			message: "請輸入聯絡信箱"
+// 		},
+// 		email: {
+// 			message: "請輸入正確的信箱格式"
+// 		}
+// 	},
+// 	line: {
+// 		presence: {
+// 			message: "請輸入 LINE ID"
+// 		},
+// 	},
+// }
+// const consultForm = document.querySelector('#consult-form');
+// const consultInputs = consultForm.querySelectorAll('input');
+// const consultData = {};
+// consultInputs.forEach((input) => {
+// 	input.addEventListener('input', () =>  validateInput(input))
+// })
 
-consultForm.addEventListener('submit', (e) => {
-	e.preventDefault();
-	consultInputs.forEach((input) => validateInput(input));
-	const errors = validate(consultForm, constraints, {fullMessages: false});
-	if(!errors) {
-		if (typeof dataLayer !== 'undefined') dataLayer.push({'event':'contactUsSend'});
-		$.ajax({
-			type: 'POST',
-			url: "/contactus/send",
-			data: consultData,
-			success: function(respones) {
-				if (typeof dataLayer !== 'undefined') dataLayer.push({'event':'contactUsSuccess'});
-				$('#consultModal').modal('hide');
-				$('#successModal').modal('show');
-				consultForm.reset();
-			},
-			error: function() {
-				alert('發送失敗，請重新再試一次');
-			},
-		});
+// consultForm.addEventListener('submit', (e) => {
+// 	e.preventDefault();
+// 	consultInputs.forEach((input) => validateInput(input));
+// 	const errors = validate(consultForm, constraints, {fullMessages: false});
+// 	if(!errors) {
+// 		if (typeof dataLayer !== 'undefined') dataLayer.push({'event':'contactUsSend'});
+// 		$.ajax({
+// 			type: 'POST',
+// 			url: "/contactus/send",
+// 			data: consultData,
+// 			success: function(respones) {
+// 				if (typeof dataLayer !== 'undefined') dataLayer.push({'event':'contactUsSuccess'});
+// 				$('#consultModal').modal('hide');
+// 				$('#successModal').modal('show');
+// 				consultForm.reset();
+// 			},
+// 			error: function() {
+// 				alert('發送失敗，請重新再試一次');
+// 			},
+// 		});
 
-	}
-})
+// 	}
+// })
 
-function validateInput(input) {
-	const errorElement = input.closest('.form-item').querySelector('.messages');
-	errorElement.textContent = '';
-	const errors = validate(consultForm, constraints, {fullMessages: false});
-	if (errors && errors[input.name]) {
-		errorElement.textContent = errors[input.name];
-		input.classList.add('error');
-	} else {
-		input.classList.remove('error');
-		consultData[input.name] = input.value;
-	}
-}
+// function validateInput(input) {
+// 	const errorElement = input.closest('.form-item').querySelector('.messages');
+// 	errorElement.textContent = '';
+// 	const errors = validate(consultForm, constraints, {fullMessages: false});
+// 	if (errors && errors[input.name]) {
+// 		errorElement.textContent = errors[input.name];
+// 		input.classList.add('error');
+// 	} else {
+// 		input.classList.remove('error');
+// 		consultData[input.name] = input.value;
+// 	}
+// }
 
 // $('#consultModal').on('show.bs.modal', function() {
 // 	if (typeof dataLayer !== 'undefined') dataLayer.push({'event':'contactUsOpen'});
