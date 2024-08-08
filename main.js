@@ -42,11 +42,11 @@ import $ from 'jquery';
 // }
 
 function scrollDo() {
-    showAnimation('.addonerotate', 'onerotate', 100);
-    showAnimation('.addbottom', 'antobottom', 100);
-	showAnimation('.addtop', 'antotop', 100);
-	showAnimation('.addleft', 'antoleft', 100);
-	showAnimation('.addright', 'antoright', 100);
+    // showAnimation('.addonerotate', 'onerotate', 100);
+    // showAnimation('.addbottom', 'antobottom', 100);
+	// showAnimation('.addtop', 'antotop', 100);
+	// showAnimation('.addleft', 'antoleft', 100);
+	// showAnimation('.addright', 'antoright', 100);
 }
 
 function showAnimation(divName, cssName, offset, callback) {
