@@ -12,7 +12,10 @@ const metaThemeColor = document.querySelector("meta[name='theme-color']");
 
 handleHeaderLight();
 
-window.addEventListener("scroll", () => handleHeaderLight());
+// window.addEventListener("scroll", () => handleHeaderLight());
+$(window).on('scroll', function () {
+	handleHeaderLight();
+});
 function handleHeaderLight() {
 	const scrollTop = window.scrollY;
 	let themeColor = '#ad0000';
