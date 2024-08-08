@@ -19,7 +19,7 @@ function handleHeaderLight() {
 	let themeColor = '#ad0000';
 	if (scrollTop > 0) {
 		header.classList.add('light');
-		themeColor = '#ffffff';
+		themeColor = '#fffff0';
 	} else {
 		header.classList.remove('light');
 	}
