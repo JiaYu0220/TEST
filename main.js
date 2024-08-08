@@ -41,32 +41,32 @@ import $ from 'jquery';
 // 	$('body').css('background-color', themeColor);
 // }
 
-function scrollDo() {
-    // showAnimation('.addonerotate', 'onerotate', 100);
-    // showAnimation('.addbottom', 'antobottom', 100);
-	// showAnimation('.addtop', 'antotop', 100);
-	// showAnimation('.addleft', 'antoleft', 100);
-	// showAnimation('.addright', 'antoright', 100);
-}
+// function scrollDo() {
+//     showAnimation('.addonerotate', 'onerotate', 100);
+//     showAnimation('.addbottom', 'antobottom', 100);
+// 	showAnimation('.addtop', 'antotop', 100);
+// 	showAnimation('.addleft', 'antoleft', 100);
+// 	showAnimation('.addright', 'antoright', 100);
+// }
 
-function showAnimation(divName, cssName, offset, callback) {
-    // if ($(divName).length > 0) {
-    //     $(divName).each(function() {
-    //         var divTop = $(this).offset().top;
-    //         var divTopOffset = eval(divTop + offset);
-    //         var scrollTop = $(window).scrollTop();
-    //         var windowHeight = $(window).height();
-    //         if (scrollTop + windowHeight > divTopOffset && scrollTop < divTopOffset) {
-    //             $(this).addClass(cssName);
-    //             $(this).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
-    //                 if (typeof callback === 'function') {
-    //                     callback();
-    //                 }
-    //             });
-    //         }
-    //     });
-    // }
-}
+// function showAnimation(divName, cssName, offset, callback) {
+//     if ($(divName).length > 0) {
+//         $(divName).each(function() {
+//             var divTop = $(this).offset().top;
+//             var divTopOffset = eval(divTop + offset);
+//             var scrollTop = $(window).scrollTop();
+//             var windowHeight = $(window).height();
+//             if (scrollTop + windowHeight > divTopOffset && scrollTop < divTopOffset) {
+//                 $(this).addClass(cssName);
+//                 $(this).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
+//                     if (typeof callback === 'function') {
+//                         callback();
+//                     }
+//                 });
+//             }
+//         });
+//     }
+// }
 
 const header = document.querySelector("header");
 const body = document.querySelector("body");
@@ -86,7 +86,7 @@ function handleHeaderLight() {
 }
 
 $(function () {
-	scrollDo();
+	// scrollDo();
 	handleHeaderLight();
 
 	// $('.reback').on('click', function() {
@@ -107,7 +107,7 @@ $(function () {
 });
 
 $(window).on('scroll', function () {
-    scrollDo();
+    // scrollDo();
 	handleHeaderLight();
 });
 
