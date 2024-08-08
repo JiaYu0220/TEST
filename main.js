@@ -50,22 +50,22 @@ function scrollDo() {
 }
 
 function showAnimation(divName, cssName, offset, callback) {
-    if ($(divName).length > 0) {
-        $(divName).each(function() {
-            var divTop = $(this).offset().top;
-            var divTopOffset = eval(divTop + offset);
-            var scrollTop = $(window).scrollTop();
-            var windowHeight = $(window).height();
-            if (scrollTop + windowHeight > divTopOffset && scrollTop < divTopOffset) {
-                $(this).addClass(cssName);
-                $(this).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
-                    if (typeof callback === 'function') {
-                        callback();
-                    }
-                });
-            }
-        });
-    }
+    // if ($(divName).length > 0) {
+    //     $(divName).each(function() {
+    //         var divTop = $(this).offset().top;
+    //         var divTopOffset = eval(divTop + offset);
+    //         var scrollTop = $(window).scrollTop();
+    //         var windowHeight = $(window).height();
+    //         if (scrollTop + windowHeight > divTopOffset && scrollTop < divTopOffset) {
+    //             $(this).addClass(cssName);
+    //             $(this).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
+    //                 if (typeof callback === 'function') {
+    //                     callback();
+    //                 }
+    //             });
+    //         }
+    //     });
+    // }
 }
 
 const header = document.querySelector("header");
@@ -200,6 +200,6 @@ function validateInput(input) {
 	}
 }
 
-$('#consultModal').on('show.bs.modal', function() {
-	if (typeof dataLayer !== 'undefined') dataLayer.push({'event':'contactUsOpen'});
-});
+// $('#consultModal').on('show.bs.modal', function() {
+// 	if (typeof dataLayer !== 'undefined') dataLayer.push({'event':'contactUsOpen'});
+// });
