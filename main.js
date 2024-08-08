@@ -1,16 +1,15 @@
 import './assets/scss/all.scss';
 import $ from 'jquery';
 
-$(document).ready(function() {
-    console.log("jQuery is loaded and ready!");
-});
-
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 const body = document.querySelector("body");
 const metaThemeColor = document.querySelector("meta[name='theme-color']");
 
-handleHeaderLight();
+
+$(function () {
+    handleHeaderLight();
+});
 
 // window.addEventListener("scroll", () => handleHeaderLight());
 $(window).on('scroll', function () {
