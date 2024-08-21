@@ -46,6 +46,10 @@ footer {
   transform: translateY(10px) scale(3.5);
 }
 
+.scale.fix-scale {
+  transform: translateY(10px) translateZ(0) scale(3.5);
+}
+
 @-webkit-keyframes pound { 0% { transform: none; }
   50% { transform: translateY(10px) scale(3.5); }
   100% { transform: none; } }

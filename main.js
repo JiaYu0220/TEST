@@ -38,7 +38,8 @@ $('.scale-btn').click(function () {
 	}, 2000);
 })
 $('.scale-toggle-btn').click(function () {
-	setTimeout(function () {
-		$('.scale').toggleClass('scale-up');
-	}, 800);
+	$('.scale').toggleClass('scale-up');
+})
+$('.fix-toggle-btn').click(function () {
+	$('.scale').toggleClass('fix-scale');
 })
