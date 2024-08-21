@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,400;1,700;1,900&family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css");
 
 body {
   margin: 0;
@@ -33,10 +34,21 @@ footer {
   background-color: #ad0000;
 }
 
+.scale.anime { -webkit-animation-delay: 0; -webkit-animation-duration: 0.7s; -webkit-animation-name: pound; -webkit-animation-fill-mode: fowards; -webkit-animation-direction: ease; -moz-animation-delay: 0; -moz-animation-duration: 0.7s; -moz-animation-name: pound; -moz-animation-fill-mode: fowards; -moz-animation-direction: ease; animation-delay: 0; animation-duration: 0.7s; animation-name: pound; animation-fill-mode: fowards; animation-direction: ease; }
+
 .scale {
   transition: all 0.2s ease;
+  display: inline-block;
+
 }
 
-.scale:hover {
-  transform: translateY(10px) scale(3.5);
-}
+@-webkit-keyframes pound { 0% { transform: none; }
+  50% { transform: translateY(10px) scale(3.5); }
+  100% { transform: none; } }
+@-moz-keyframes pound { 0% { transform: none; }
+  50% { transform: translateY(10px) scale(3.5); }
+  100% { transform: none; } }
+
+@keyframes pound { 0% { transform: none; }
+  50% { transform: translateY(10px) scale(3.5); }
+  100% { transform: none; } }
