@@ -36,17 +36,17 @@ footer {
 
 .scale.anime { -webkit-animation-delay: 0; -webkit-animation-duration: 0.7s; -webkit-animation-name: pound; -webkit-animation-fill-mode: fowards; -webkit-animation-direction: ease; -moz-animation-delay: 0; -moz-animation-duration: 0.7s; -moz-animation-name: pound; -moz-animation-fill-mode: fowards; -moz-animation-direction: ease; animation-delay: 0; animation-duration: 0.7s; animation-name: pound; animation-fill-mode: fowards; animation-direction: ease; }
 
-.scale {
+.scale, .scale-child {
   transition: all 0.2s ease;
   display: inline-block;
 
 }
 
-.scale.scale-up {
+.scale.scale-up, .scale-child.scale-up {
   transform: translateY(10px) scale(3.5);
 }
 
-.scale.fix-scale {
+.scale.fix-scale, .scale-child.fix-scale {
   transform: translateY(10px) translateZ(0) scale(3.5);
 }
 
