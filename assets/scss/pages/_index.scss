@@ -43,6 +43,7 @@ footer {
 }
 
 .scale.scale-up, .scale-child.scale-up {
+  -webkit-transform: translateY(10px) scale(3.5);
   transform: translateY(10px) scale(3.5);
 }
 
