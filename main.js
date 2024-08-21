@@ -39,6 +39,6 @@ $('.scale-btn').click(function () {
 })
 $('.scale-toggle-btn').click(function () {
 	setTimeout(function () {
-		$('.scale').toggleClass('anime');
+		$('.scale').toggleClass('scale-up');
 	}, 800);
 })
