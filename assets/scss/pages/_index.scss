@@ -32,3 +32,11 @@ main {
 footer {
   background-color: #ad0000;
 }
+
+.scale {
+  transition: all 0.2s ease;
+}
+
+.scale:hover {
+  transform: translateY(10px) scale(3.5);
+}
