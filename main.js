@@ -43,3 +43,6 @@ $('.scale-toggle-btn').click(function () {
 $('.fix-toggle-btn').click(function () {
 	$('.scale').toggleClass('fix-scale');
 })
+$('.scale-child-btn').click(function () {
+	$('.scale-child').toggleClass('scale-up');
+})
