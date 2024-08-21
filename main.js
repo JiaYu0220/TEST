@@ -37,3 +37,8 @@ $('.scale-btn').click(function () {
 		$('.scale').removeClass('anime');
 	}, 2000);
 })
+$('.scale-toggle-btn').click(function () {
+	setTimeout(function () {
+		$('.scale').toggleClass('anime');
+	}, 800);
+})
