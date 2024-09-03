@@ -61,3 +61,10 @@ footer {
 @keyframes pound { 0% { transform: none; }
   50% { transform: translateY(10px) scale(3.5); }
   100% { transform: none; } }
+
+  .hover ul {
+    display: none;
+  }
+  .hover:hover ul {
+    display: block;
+  }
