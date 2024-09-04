@@ -1,3 +1,4 @@
+# 按鍵盤「.(ㄡ)」可進入 gitHub Codesoaces
 # 網頁切版直播班 Vite 範例
 
 ## Node.js 版本
