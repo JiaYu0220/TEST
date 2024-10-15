@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
     <meta name="theme-color" content="#ad0000"/>
-    <script type="module" crossorigin src="/TEST/assets/main-PS3cyTn1.js"></script>
-    <link rel="stylesheet" crossorigin href="/TEST/assets/main-DVu95W_j.css">
+    <script type="module" crossorigin src="/TEST/assets/main-CsUdaLU6.js"></script>
+    <link rel="stylesheet" crossorigin href="/TEST/assets/main-DQdmPgZT.css">
   </head>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   <body>
     <!-- <h1 class="header">我是 header</h1>
 <a href="index.html">index</a>
@@ -24,9 +28,8 @@
       <button type="button" class="scale-toggle-btn">放大toggle按鈕</button>
       <button type="button" class="scale-child-btn">放大子元素按鈕</button>
       <button type="button" class="fix-toggle-btn">修改toggle按鈕</button>
-      <div class="scale">
-        <p class="scale-child">放大</p>
-        <span>放大</span>
+      <div class="group scale">
+        <span class="pc-menu">購物車</span><b class="cart_items_amount">2</b>
       </div>
       <ul>
         <li class="hover">
@@ -37,6 +40,44 @@
         </li>
 
       </ul>
+      <div class="carts-block addons-block">
+        <div class="carts-block-content">
+          <div class="swiper addons-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="item-img"><a href="https://shop-store.com.tw/img/no-photo.png" class="icon-zoom-in"></a> <img src="https://shop-store.com.tw/img/no-photo.png" alt="加購品" width="100%"></div>
+                  <div class="item-content">
+                    <div class="item-name">加購品</div>
+                    <div class="item-price"><span><sup>NT$</sup>1000</span></div>
+                    <div class="no-text item-action"><button type="button" class="item-btn no-text">我要加購</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="item-img"><a href="https://shopstore-manage.shop-store.com.tw/upload/1302/addon_gift/1302_670dc6dd02530.png.webp" class="icon-zoom-in"></a> <img src="https://shopstore-manage.shop-store.com.tw/upload/1302/addon_gift/1302_670dc6dd02530.png.webp" alt="預購24年9月『免訂金』GSC 孤獨搖滾 手掌型玩偶 附Onikoro清酒隨身包 廣井菊理 0512" width="100%"></div>
+                  <div class="item-content">
+                    <div class="item-name">預購24年9月『免訂金』GSC 孤獨搖滾 手掌型玩偶 附Onikoro清酒隨身包 廣井菊理 0512</div>
+                    <div class="item-price"><span><sup>NT$</sup>1000</span></div>
+                    <div class="no-text item-action"><button type="button" class="item-btn no-text">我要加購</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="item-img"><a href="https://shopstore-manage.shop-store.com.tw/upload/1302/addon_gift/1302_670dc70e9daf6.png.webp" class="icon-zoom-in"></a> <img src="https://shopstore-manage.shop-store.com.tw/upload/1302/addon_gift/1302_670dc70e9daf6.png.webp" alt="12313" width="100%"></div>
+                  <div class="item-content">
+                    <div class="item-name">12313</div>
+                    <div class="item-price"><span><sup>NT$</sup>200</span></div>
+                    <div class="no-text item-action"><button type="button" class="item-btn no-text">我要加購</button></div>
+                  </div>
+                </div>
+              </div>
+            </div><span class="swiper-notification"></span>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>footer</footer>
 
